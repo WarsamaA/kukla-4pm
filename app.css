@@ -1,10 +1,13 @@
 body {
   margin: 0;
 }
+
+/* general styles */
 .container {
   background-color: beige;
 }
 
+/* Logo and navigation menu */
 header .wrapper {
   display: flex;
   justify-content: space-around;
@@ -32,4 +35,26 @@ header .navigation-bar ul li button {
   border: 2px solid #fe4c1c;
   text-transform: uppercase;
   padding: 7px;
+}
+
+/* menu bottom animation bar */
+header .navigation-bar ul li a:before {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background-color: orange;
+  position: absolute;
+  bottom: -4px;
+  transition: all 500ms ease;
+}
+
+header .navigation-bar ul li a:hover {
+  color: orange;
+}
+header .navigation-bar ul li a:hover:before {
+  width: 100%;
+}
+header .navigation-bar ul li a {
+  position: relative;
+  transition: all 500ms;
 }
