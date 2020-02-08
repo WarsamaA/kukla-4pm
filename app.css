@@ -5,7 +5,7 @@ body {
 
 /* general styles */
 .container {
-  background-color: beige;
+  background-color: white;
 }
 
 /* Logo and navigation menu */
@@ -164,4 +164,130 @@ header .navigation-bar ul li a {
   background: white;
   color: black;
   border: 1px solid rgb(226, 73, 3);
+}
+
+
+
+
+.pre_logo{
+  color:rgb(226, 73, 3);
+}
+
+
+.logo h2{
+  position: relative;
+  z-index: 999;
+  font-weight: bold;
+  font-size:28px;
+}
+
+.logo h2::after{
+  content: '';
+  width:10px;
+  height:10px;
+  background:rgb(226, 73, 3);
+  position: absolute;
+  bottom:0;
+  left:64px;
+  z-index: -1;
+}
+
+
+.services{
+  background:linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(241, 246, 253, 1) 100%);
+  margin:0;
+  padding:10px;
+  
+}
+
+.section_title{
+  width: 40%;
+  margin:auto;
+  text-align:center;
+}
+
+.bar{
+  width:10%;
+  height:5px;
+  background:rgb(226, 73, 3);
+  border:none;
+  opacity: .5;
+  position: relative;
+  margin:auto;
+}
+
+.bar::before{
+  content:'';
+  width: 12%;
+  height:10px;
+  position: absolute;
+  bottom:0;
+  left:43%;
+  background:rgb(255, 123, 0);
+  opacity:1;
+  z-index:999;
+}
+
+.row{
+  width:60%;
+  margin:auto;
+  display: flex;
+  margin-top:50px;
+  margin-bottom:50px;
+  /* padding:10px; */
+}
+
+.service_part{
+  background:rgb(255, 255, 255);
+  padding:20px 10px 20px 10px;
+  margin:5px;
+  height:320px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 9px 9px 14px -8px rgba(0,0,0,0.28);
+
+}
+
+.service_part h3:hover{
+  color:rgb(226, 73, 3);
+}
+
+.service_part span{
+  position: absolute;
+  bottom:15px;
+  left:15px;
+  
+}
+
+.service_part::after{
+  content: '';
+  width:0%;
+  height:5px;
+  background:rgb(226, 73, 3);
+  position: absolute;
+  bottom:0;
+  left:0;
+  border-radius:10px;
+}
+
+.service_part:hover:after{
+  width:100%;
+  transition: all 500ms ease-in-out;
+}
+
+.services_btn{
+  background:rgb(226, 73, 3);
+  color:white;
+  padding:15px;
+  border:none;
+  margin-left:45%;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 9px 9px 14px -8px rgba(0,0,0,0.28);
+}
+
+.services_btn:hover{
+  color:rgb(226, 73, 3);
+  background: white;
+  border:2px solid rgb(226, 73, 3);
 }
